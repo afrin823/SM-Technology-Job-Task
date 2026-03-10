@@ -35,12 +35,10 @@ body {
     z-index: 100;
 }
 
-/* logo */
 .logo img {
     width: 40px;
 }
 
-/* menu */
 .menu {
     display: flex;
     align-items: center;
@@ -62,7 +60,6 @@ a.cookie {
     text-decoration: none;
 }
 
-/* button */
 .nav-btn {
     background: #ff9900;
     color: white;
@@ -74,7 +71,6 @@ a.cookie {
     box-shadow: 0 4px 0 #000;
 }
 
-/* hamburger */
 .hamburger {
     display: none;
     font-size: 26px;
@@ -92,8 +88,6 @@ a.cookie {
     background: linear-gradient(180deg, #ffffff 0%, #fff8ee 45%, #f6e2bb 100%);
 }
 
-/* hero logo */
-
 .hero-logo {
     display: flex;
     align-items: center;
@@ -106,8 +100,6 @@ a.cookie {
 .hero-logo img {
     width: 40px;
 }
-
-/* hero text */
 
 .hero-content h1 {
     font-size: 56px;
@@ -126,8 +118,6 @@ a.cookie {
 
 /* ------------------- cards start ------------------- */
 
-/* income card */
-
 .income-card {
     position: absolute;
     left: 8%;
@@ -140,7 +130,6 @@ a.cookie {
     width: 100%;
 }
 
-/* users card */
 
 .users-card {
     position: absolute;
@@ -158,8 +147,6 @@ a.cookie {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* avatars */
-
 .avatars {
     display: flex;
 }
@@ -171,8 +158,6 @@ a.cookie {
     border: 2px solid white;
     margin-left: -10px;
 }
-
-/* user text */
 
 .user-info h4 {
     font-size: 16px;
@@ -200,8 +185,6 @@ a.cookie {
     color: #333;
 }
 
-/* stats */
-
 .stats {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -228,8 +211,6 @@ a.cookie {
     color: #666;
 }
 
-/* story */
-
 .story {
     display: inline-flex;
     align-items: center;
@@ -245,8 +226,6 @@ a.cookie {
     color: #ff9900;
     font-weight: 600;
 }
-
-/* title */
 
 .main-title {
     font-size: 46px;
@@ -269,20 +248,10 @@ a.cookie {
     margin-bottom: 40px;
 }
 
-
-
 .btn:hover {
     transform: translateY(2px);
     box-shadow: 0 4px 0 #c77400;
 }
-
-/* ------------------- why choose us start ------------------- */
-
-
-
-/* =========================
-   LEFT SIDE
-========================= */
 
 .why-left {
     width: 50%;
@@ -320,8 +289,6 @@ a.cookie {
     margin-bottom: 30px;
 }
 
-/* BUTTON */
-
 .vision-btn {
     display: inline-block;
     padding: 14px 28px;
@@ -337,17 +304,11 @@ a.cookie {
     background: #ffb733;
 }
 
-/* =========================
-   RIGHT SIDE
-========================= */
-
 .why-right {
     width: 50%;
     height: 420px;
     position: relative;
 }
-
-/* SHAPE BACKGROUND */
 
 .shape {
     position: absolute;
@@ -359,8 +320,6 @@ a.cookie {
 
     z-index: 1;
 }
-
-/* CENTER CIRCLE */
 
 .circle {
     width: 230px;
@@ -378,30 +337,23 @@ a.cookie {
 .circle i {
     width: 70px;
 }
+
 i.fa-brands.fa-react {
     font-size: 75px;
     color: #ffa500;
 }
-
-/* =========================
-   FEATURE BOX
-========================= */
 
 .feature {
     position: absolute;
     display: flex;
     align-items: center;
     gap: 10px;
-
     background: #1b1b1b;
     padding: 12px 20px;
     border-radius: 10px;
-
     font-size: 14px;
     color: #fff;
-
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
-
     z-index: 3;
 }
 
@@ -409,7 +361,6 @@ i.fa-brands.fa-react {
     width: 18px;
 }
 
-/* FEATURE POSITIONS */
 
 .f1 {
     top: 60px;
@@ -434,31 +385,11 @@ i.fa-brands.fa-react {
     right: -55px;
     padding: 24px;
 }
-/* ------------------- tablet -------------------*/
-
-/* ------------------- mobile ------------------- */
-
-
-
-
-
-
-
-
-
 
 /* ------------------- our story end  ------------------- */
 
-
-
-
-
-
-/*------------------- why choose us end  ------------------- */
-
 /* ------------------- service section start ------------------- */
 
-/* Section Header */
 .services-section {
     max-width: 1200px;
     margin: 0 auto;
@@ -496,11 +427,9 @@ i.fa-brands.fa-react {
     color: #666;
 }
 
-/* Services Grid */
 .services-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* Always 2 columns */
     gap: 30px;
     margin-top: 50px;
 }
@@ -508,7 +437,6 @@ i.fa-brands.fa-react {
 .selling-services-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* Always 2 columns */
     gap: 30px;
     margin-top: 50px;
 }
@@ -552,8 +480,6 @@ i.fa-brands.fa-react {
     left: 0;
     color: #ff9900;
 }
-
-/* Icon */
 .service-card .service-icon {
     position: absolute;
     top: 20px;
@@ -570,7 +496,6 @@ i.fa-brands.fa-react {
 
 
 /* ------------------- Our Approach section start  -------------------*/
-
 
 .main-approach-container {
     background: #0b0b0b;
@@ -593,8 +518,6 @@ i.fa-brands.fa-react {
     gap: 50px;
     flex-wrap: wrap;
 }
-
-/* images */
 
 .approach-images {
     display: flex;
@@ -625,8 +548,6 @@ i.fa-brands.fa-react {
     height: 300px;
     margin-top: 80px;
 }
-
-/* content */
 
 .approach-content {
     flex: 1;
@@ -674,16 +595,10 @@ i.fa-brands.fa-react {
     background: #ff8c00;
 }
 
-
-
-
-
 /*------------------- Our Approach section end ------------------- */
 
 
 /*------------------- scale your business section start  ------------------- */
-
-/* TOP BAR */
 
 .top-bar {
     display: flex;
@@ -692,9 +607,6 @@ i.fa-brands.fa-react {
     align-items: center;
     padding: 20px;
 }
-
-/* HERO */
-
 .hero {
     text-align: center;
     margin-bottom: 40px;
@@ -713,8 +625,6 @@ i.fa-brands.fa-react {
     margin-top: 8px;
     color: #666;
 }
-
-/* BOOKING CARD */
 
 .booking-wrapper {
     display: flex;
@@ -735,8 +645,6 @@ i.fa-brands.fa-react {
 .right.why-right {
     display: flex;
 }
-
-/* LEFT */
 
 .left {
     flex: 1;
@@ -774,8 +682,6 @@ i.fa-brands.fa-react {
     color: #3b82f6;
     font-size: 14px;
 }
-
-/* RIGHT */
 
 .right {
     flex: 1;
@@ -861,6 +767,10 @@ i.fa-brands.fa-react {
     padding: 60px 80px;
 }
 
+.footer-info img {
+    margin-bottom: 5px;
+}
+
 .copyWright-links a {
     text-decoration: none;
     color: white;
@@ -922,8 +832,6 @@ i.fa-brands.fa-react {
     flex-wrap: wrap;
     gap: 60px;
 }
-
-/* LEFT SIDE */
 
 .left {
     max-width: 520px;
@@ -1051,82 +959,73 @@ i.fa-brands.fa-react {
 }
 
 
-
-
-
-
 .feature:hover {
     transform: translateX(-6px);
     background: #222;
 }
- /*----------------- responsive ----------------------- */
+
+/*----------------- responsive ----------------------- */
 @media(max-width:480px) {
-    
-.why-section{
-padding:60px 6%;
-}
 
-.why-container{
-flex-direction:column;
-text-align:center;
-gap:40px;
-}
+    .why-section {
+        padding: 60px 6%;
+    }
 
-/* LEFT */
+    .why-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
 
-.why-left{
-width:100%;
-}
+    .why-left {
+        width: 100%;
+    }
 
-.why-left h1{
-font-size:30px;
-}
+    .why-left h1 {
+        font-size: 30px;
+    }
 
-.why-left p{
-font-size:14px;
-}
+    .why-left p {
+        font-size: 14px;
+    }
+    .why-right {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
 
-/* RIGHT */
+    .shape {
+        display: none;
+    }
 
-.why-right{
-width:100%;
-height:auto;
-display:flex;
-flex-direction:column;
-align-items:center;
-gap:10px;
-}
+    .circle {
+        display: none;
+    }
 
-/* HIDE SHAPE & CIRCLE */
+    .feature {
+        position: static;
+        width: 90%;
+        justify-content: center;
+        margin: 6px auto;
+        font-size: 13px;
+        padding: 10px 14px;
+    }
 
-.shape{
-display:none;
-}
 
-.circle{
-display:none;
-}
 
-/* FEATURES */
+    .f1,
+    .f2,
+    .f3,
+    .f4 {
+        right: auto;
+        top: auto;
+        bottom: auto;
+    }
 
-.feature{
-position:static;
-width:90%;
-justify-content:center;
-margin:6px auto;
-font-size:13px;
-padding:10px 14px;
-}
-
-/* remove desktop positions */
-
-.f1,.f2,.f3,.f4{
-right:auto;
-top:auto;
-bottom:auto;
-}
-
-     .why-section {
+    .why-section {
         padding: 70px 6%;
     }
 
@@ -1173,9 +1072,9 @@ bottom:auto;
     }
 
 }
+
 @media (max-width: 768px) {
 
-    /* hide shapes on mobile */
     .shape-light,
     .shape-dark {
         display: none;
@@ -1198,7 +1097,6 @@ bottom:auto;
         width: 80px;
     }
 
-    /* feature cards normal flow */
     .feature {
         position: static;
         width: 90%;
@@ -1286,9 +1184,9 @@ bottom:auto;
 
     .left {
         border-right: none;
-        border-bottom: 1px solid #eee;
     }
 }
+
 @media (max-width: 992px) {
 
     .menu {
@@ -1321,22 +1219,18 @@ bottom:auto;
     .hamburger {
         display: block;
     }
-
-    /* Navbar */
     .navbar {
         padding: 20px;
     }
 
     .menu {
         display: none;
-        /* Mobile menu logic logic script.js diye handle korte hobe */
     }
 
     .hamburger {
         display: block;
     }
 
-    /* Hero Area */
     .hero-content h1 {
         font-size: 36px;
     }
@@ -1344,10 +1238,7 @@ bottom:auto;
     .income-card,
     .users-card {
         display: none;
-        /* Mobile e absolute cards gulo bad dewa bhalo */
     }
-
-    /* Why Choose Us */
     .wrapper {
         grid-template-columns: 1fr;
         text-align: center;
@@ -1381,7 +1272,6 @@ bottom:auto;
 
     .feature {
         position: static;
-        /* Absolute theke static e niye asa holo */
         width: 100%;
         max-width: 280px;
     }
@@ -1390,13 +1280,11 @@ bottom:auto;
         display: none;
     }
 
-    /* Services & Selling Grid */
     .services-grid,
     .selling-services-grid {
         grid-template-columns: 1fr;
     }
 
-    /* Footer */
     .footer-grid {
         grid-template-columns: 1fr;
     }
