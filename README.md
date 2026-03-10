@@ -85,6 +85,8 @@ Then open `index.html` in your browser.
 
 ## 📸 Project Preview
 
+![Project Screenshot](https://i.ibb.co.com/C5dgq0BP/Screenshot-1.png)
+
 ![Project Screenshot](https://i.ibb.co/NgJxwK4V/Screenshot-2.png)
 
 ---
