@@ -480,6 +480,7 @@ i.fa-brands.fa-react {
     left: 0;
     color: #ff9900;
 }
+
 .service-card .service-icon {
     position: absolute;
     top: 20px;
@@ -607,6 +608,7 @@ i.fa-brands.fa-react {
     align-items: center;
     padding: 20px;
 }
+
 .hero {
     text-align: center;
     margin-bottom: 40px;
@@ -966,6 +968,15 @@ i.fa-brands.fa-react {
 
 /*----------------- responsive ----------------------- */
 @media(max-width:480px) {
+    .copyWright-links a {
+        font-size: 10px;
+    }
+
+    .footer-links a {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
 
     .why-section {
         padding: 60px 6%;
@@ -988,6 +999,7 @@ i.fa-brands.fa-react {
     .why-left p {
         font-size: 14px;
     }
+
     .why-right {
         width: 100%;
         height: auto;
@@ -1074,6 +1086,15 @@ i.fa-brands.fa-react {
 }
 
 @media (max-width: 768px) {
+    .copyWright-links a {
+        font-size: 10px;
+    }
+
+    .footer-links a {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
 
     .shape-light,
     .shape-dark {
@@ -1219,6 +1240,7 @@ i.fa-brands.fa-react {
     .hamburger {
         display: block;
     }
+
     .navbar {
         padding: 20px;
     }
@@ -1239,6 +1261,7 @@ i.fa-brands.fa-react {
     .users-card {
         display: none;
     }
+
     .wrapper {
         grid-template-columns: 1fr;
         text-align: center;
