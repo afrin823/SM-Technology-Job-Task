@@ -9,7 +9,7 @@ body{
 background:#f3f3f3;
 }
 
-/* navbar */
+/* ================= NAVBAR ================= */
 
 .navbar{
 display:flex;
@@ -18,6 +18,7 @@ align-items:center;
 padding:20px 80px;
 background:white;
 position:relative;
+z-index:100;
 }
 
 /* logo */
@@ -45,7 +46,7 @@ font-size:16px;
 color:#ff9900;
 }
 
-/* navbar button */
+/* button */
 
 .nav-btn{
 background:#ff9900;
@@ -62,13 +63,133 @@ box-shadow:0 4px 0 #000;
 
 .hamburger{
 display:none;
-font-size:24px;
+font-size:26px;
 cursor:pointer;
 }
 
+/* ================= HERO ================= */
 
+.hero-area{
+position:relative;
+padding:120px 20px;
+text-align:center;
+overflow:hidden;
 
-/* tablet */
+background: linear-gradient(
+180deg,
+#ffffff 0%,
+#fff8ee 45%,
+#f6e2bb 100%
+);
+}
+
+/* hero logo */
+
+.hero-logo{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:10px;
+margin-bottom:30px;
+font-size:14px;
+}
+
+.hero-logo img{
+width:40px;
+}
+
+/* hero text */
+
+.hero-content h1{
+font-size:56px;
+font-weight:800;
+max-width:900px;
+margin:auto;
+line-height:1.2;
+}
+
+.hero-content span{
+color:#ff9900;
+display:block;
+}
+
+/* button */
+
+.cta-btn{
+margin-top:30px;
+background:#ff9900;
+color:white;
+border:none;
+padding:16px 30px;
+font-size:18px;
+border-radius:30px;
+font-weight:600;
+cursor:pointer;
+box-shadow:0 6px 0 #000;
+}
+
+/* ================= CARDS ================= */
+
+/* income card */
+
+.income-card{
+position:absolute;
+left:8%;
+top:50%;
+transform:translateY(-50%) rotate(-8deg);
+width:200px;
+}
+
+.income-card img{
+width:100%;
+}
+
+/* users card */
+
+.users-card{
+position:absolute;
+right:8%;
+top:45%;
+transform:rotate(8deg);
+
+display:flex;
+align-items:center;
+gap:12px;
+
+background:white;
+padding:12px 18px;
+border-radius:16px;
+box-shadow:0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* avatars */
+
+.avatars{
+display:flex;
+}
+
+.avatars img{
+width:32px;
+height:32px;
+border-radius:50%;
+border:2px solid white;
+margin-left:-10px;
+}
+
+/* user text */
+
+.user-info h4{
+font-size:16px;
+margin:0;
+}
+
+.user-info p{
+font-size:14px;
+margin:0;
+color:#555;
+}
+
+/* ================= TABLET ================= */
 
 @media (max-width:992px){
 
@@ -80,31 +201,44 @@ padding:20px 40px;
 gap:20px;
 }
 
-.nav-btn{
-padding:8px 16px;
+.hero-content h1{
+font-size:40px;
+}
+
+.income-card,
+.users-card{
+display:none;
 }
 
 }
 
-/* mobile */
+/* ================= MOBILE ================= */
 
 @media (max-width:768px){
+
+/* show hamburger */
 
 .hamburger{
 display:block;
 }
 
+/* mobile menu */
+
 .menu{
 position:absolute;
 top:80px;
-right:0;
-background:white;
+left:0;
 width:100%;
+background:white;
+
 flex-direction:column;
 align-items:center;
 gap:20px;
+
 padding:20px 0;
+
 display:none;
+
 box-shadow:0 10px 20px rgba(0,0,0,0.1);
 }
 
@@ -114,6 +248,19 @@ display:flex;
 
 .navbar{
 padding:20px;
+}
+
+.hero-content h1{
+font-size:30px;
+}
+
+.cta-btn{
+font-size:16px;
+padding:14px 24px;
+}
+
+.hero-logo{
+flex-direction:column;
 }
 
 }
