@@ -504,6 +504,13 @@ body {
     gap: 30px;
     margin-top: 50px;
 }
+.selling-services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Always 2 columns */
+    gap: 30px;
+    margin-top: 50px;
+}
 
 .service-card {
     background: #fff;
@@ -715,7 +722,7 @@ body {
 }
 
 .booking-card {
-    max-width: 900px;
+    max-width: 1200px;
     width: 100%;
     display: flex;
     background: white;
@@ -741,7 +748,19 @@ body {
     margin-bottom: 15px;
     color: #666;
 }
-
+.vision-btn {
+    margin-top: 30px;
+    background: #ff9900;
+    color: white;
+    border: none;
+    padding: 16px 30px;
+    font-size: 18px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 6px 0 #fff;
+}
 .cookie {
     display: block;
     margin-top: 40px;
@@ -811,7 +830,17 @@ body {
     font-size: 14px;
     color: #555;
 }
-
+.growth-services {
+    background: #151515;
+    color: white;
+}
+.service-card.growth-card {
+    background: #232323;
+    border: 0;
+}
+.service-card.growth-card ul li {
+    color: white;
+}
 /*------------------- scale your business section end  ------------------- */
 
 /* ------------------- footer start ------------------- */
@@ -869,165 +898,128 @@ body {
 
 /*------------------- responsive ---------------------*/
 
-@media(max-width:768px) {
+/*------------------- responsive ---------------------*/
 
-      .container {
-        padding: 60px 15px;
-    }
-
-    .stats {
-        grid-template-columns: 1fr;
-    }
-
-    .main-title {
-        font-size: 28px;
-    }
-
-    .stat-box h2 {
-        font-size: 28px;
-    }
-
-    .desc {
-        font-size: 15px;
-    }
-
-    .services-grid {
-        grid-template-columns: 1fr;
-        /* 1 column on tablets and mobiles */
-    }
-
-    .booking-card {
-        flex-direction: column;
-    }
-
-    .left {
-        border-right: none;
-        border-bottom: 1px solid #eee;
-    }
-
-    .hero h1 {
-        font-size: 28px;
-    }
-
-     .approach-content h2 {
-        font-size: 32px;
-    }
-
-    .img1,
-    .img2 {
-        width: 200px;
-        height: 250px;
-    }
-
-}
-
-@media(max-width:992px) {
-
-    /*--------------- navbar  --------------*/
-
+@media (max-width: 992px) {
+    /* Navbar */
     .navbar {
-        padding: 20px 40px;
+        padding: 20px;
     }
-
     .menu {
-        gap: 20px;
+        display: none; /* Mobile menu logic logic script.js diye handle korte hobe */
+    }
+    .hamburger {
+        display: block;
     }
 
+    /* Hero Area */
     .hero-content h1 {
-        font-size: 40px;
+        font-size: 36px;
+    }
+    .income-card, .users-card {
+        display: none; /* Mobile e absolute cards gulo bad dewa bhalo */
     }
 
-    .income-card,
-    .users-card {
-        display: none;
-    }
-
-    .footer {
-        padding: 50px 40px;
-    }
-
-    .footer-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 30px;
-    }
-
-    .footer-info {
-        grid-column: span 1;
-    }
-
-    .footer-bottom {
-        flex-direction: column;
-        gap: 15px;
-        text-align: center;
-    }
-
-    .copyWright-links {
-        justify-content: center;
-    }
-
+    /* Why Choose Us */
     .wrapper {
         grid-template-columns: 1fr;
         text-align: center;
     }
-
+    .left h1 {
+        font-size: 32px;
+    }
     .left p {
         margin: auto;
     }
-
     .center {
         margin: 40px 0;
     }
-
+    .center::before, .center::after {
+        width: 250px;
+        height: 250px;
+    }
     .right {
         height: auto;
         display: flex;
         flex-direction: column;
-        gap: 20px;
         align-items: center;
+        gap: 15px;
     }
-
     .feature {
-        position: relative;
-        right: auto;
-        top: auto;
+        position: static; /* Absolute theke static e niye asa holo */
+        width: 100%;
+        max-width: 280px;
     }
-
     .right::before {
         display: none;
     }
 
-    .container {
+    /* Services & Selling Grid */
+    .services-grid, .selling-services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 28px;
+    }
+    .stats {
+        grid-template-columns: 1fr;
+    }
+    .approach-container {
         flex-direction: column;
         text-align: center;
     }
-
     .approach-images {
-        justify-content: center;
+        flex-direction: row;
+        gap: 10px;
     }
-
-    .img2 {
-        margin-top: 40px;
+    .img1, .img2 {
+        width: 150px;
+        height: 200px;
+        margin-top: 0;
     }
-
-    .vision {
-        border: none;
-        padding-left: 0;
+    .booking-card {
+        flex-direction: column;
     }
-
-    
-
+    .left {
+        border-right: none;
+        border-bottom: 1px solid #eee;
+    }
 }
 
-/* tablet */
-
-@media (max-width:1024px) {
-
-    .stats {
-        grid-template-columns: repeat(2, 1fr);
+@media (max-width: 992px) {
+    /* Menu-ke prothome hide kore rakha */
+    .menu {
+        display: none; 
+        flex-direction: column;
+        position: absolute;
+        top: 80px; /* Navbar height onujayi kom-beshi koro */
+        left: 0;
+        width: 100%;
+        background: white;
+        padding: 20px;
+        gap: 20px;
+        box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+        z-index: 999;
     }
 
-    .main-title {
-        font-size: 36px;
+    /* Jokhon JavaScript toggle korbe, tokhon eita show hobe */
+    .menu.active {
+        display: flex;
     }
 
+    .hamburger {
+        display: block; /* Hamburger-ta show hobe */
+    }
 }
