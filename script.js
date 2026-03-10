@@ -1,12 +1,14 @@
-// for hamburger 
+// hamburger 
 const hamburger = document.getElementById("hamburger");
 const menu = document.getElementById("menu");
+const icon = hamburger.querySelector("i");
 
 hamburger.addEventListener("click", () => {
-    menu.classList.toggle("active")
-})
+    menu.classList.toggle("active");
+    icon.classList.toggle("fa-bars");
+    icon.classList.toggle("fa-xmark");
 
-
+});
 
 // calender
 const monthYear = document.getElementById("monthYear")
