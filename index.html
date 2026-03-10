@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Amazon</title>
     <!------------------- css link ------------------->
     <link rel="stylesheet" href="style.css">
     <!------------------- font awesome link ------------------->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./images/Logo.png">
 </head>
 
 <body>
@@ -21,10 +22,10 @@
             <img src="./images/Logo.png" alt="logo">
         </div>
         <div class="menu" id="menu">
-            <a href="#">Services</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-            <button class="nav-btn">Book a Free Consultation</button>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <button href="#book" class="nav-btn">Book a Free Consultation</button>
         </div>
 
         <!-- hamburger -->
@@ -52,7 +53,7 @@
                 <span>Maximize Profits!</span>
             </h1>
 
-            <button class="btn">Book a Free Consultation</button>
+            <button href="#book" class="btn">Book a Free Consultation</button>
         </div>
 
         <!-- income card -->
@@ -80,7 +81,7 @@
     <!------------------- hero section end  ------------------->
 
     <!------------------- our story start  ------------------->
-    <div class="container">
+    <div id="about" class="container">
 
         <div class="top-title">
             Amazon Market Statistics Worldwide 2024
@@ -134,7 +135,7 @@
 
     <!------------------- our story end  ------------------->
 
-
+    <!------------------- why choose us start  ------------------->
     <section class="why-section">
 
         <div class="why-container">
@@ -157,46 +158,37 @@
                     inventory, & protect your account so you can focus on your business.
                 </p>
 
-                <p class="rocket">🚀 No more guesswork. No more wasted money. Just real results.</p>
+                <p class="rocket"> No more guesswork. No more wasted money. Just real results.</p>
 
-                <button class="vision-btn">Book a Free Consultation</button>
+                <button href="#book" class="vision-btn">Book a Free Consultation</button>
 
             </div>
 
 
             <!-- RIGHT CONTENT -->
-            <div class="right why-right">
+         <div class="why-right">
 
-                <!-- DARK SHAPE -->
-                <div class="shape-dark"></div>
+    <img class="shape" src="./images/shape.png" alt="">
 
-                <!-- LIGHT SHAPE -->
-                <div class="shape-light"></div>
+    <div class="circle">
+       <i class="fa-brands fa-react"></i>
+    </div>
 
-                <div class="circle">
-                    <img src="./images/Logo.png" alt="">
-                </div>
+    <div class="feature f1"><img src="./images/🚀.png"> Proven Expertise</div>
+    <div class="feature f2"><img src="./images/🚀.png"> Maximized Visibility</div>
+    <div class="feature f3"><img src="./images/🚀.png"> Strategic Growth</div>
+    <div class="feature f4"><img src="./images/🚀.png"> Exclusive Partnerships</div>
 
-                <div class="feature f1">🚀 Proven Expertise</div>
-                <div class="feature f2">🚀 Maximized Visibility</div>
-                <div class="feature f3">🚀 Strategic Growth</div>
-                <div class="feature f4">🚀 Exclusive Partnerships</div>
-
-            </div>
+</div>
 
         </div>
 
     </section>
 
-
-
-
-    <!------------------- why choose us start  ------------------->
-
     <!------------------- why choose us end  ------------------->
 
     <!------------------- service section start ------------------->
-    <section class="services-section">
+    <section id="services" class="services-section">
         <div class="services-header">
             <div class="logo-text">
                 <img src="./images/image 6.png" alt="">
@@ -294,7 +286,7 @@
                         manage their finances with ease.
                     </p>
 
-                    <button class="vision-btn">Book a Free Strategy Call</button>
+                    <button href="#book" class="vision-btn">Book a Free Strategy Call</button>
 
                 </div>
 
@@ -362,7 +354,7 @@
                 </ul>
             </div>
         </div>
-        <button class="btn">Talk to an Expert</button>
+        <button href="#book" class="btn">Talk to an Expert</button>
     </section>
     <!-- growth business section ------------ -->
     <div class="growth-services">
@@ -419,12 +411,12 @@
                     </ul>
                 </div>
             </div>
-            <button class="vision-btn">Talk to an Expert</button>
+            <button href="#book" class="vision-btn">Talk to an Expert</button>
         </section>
     </div>
 
     <!------------------- scale your business section start ------------------->
-    <header class="top-bar">
+    <header id="book" class="top-bar">
         <img src="./images/image 6.png" alt="">
         <a> <span style="color: #ffa500">Contact </span> Us</a>
     </header>
@@ -504,7 +496,7 @@
 
 
     <!------------------- footer start ------------------->
-    <footer class="footer">
+    <footer id="contact" class="footer">
         <div class="footer-container footer-grid">
             <div class="footer-info">
                 <img src="./images/Logo.png" alt="">
